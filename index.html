@@ -1,82 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guabiruba Tem</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <h1>Guabiruba Tem</h1>
-    <h2>"O Comércio de Guabiruba na palma da sua mão"</h2>
+    <p>O comércio local na palma da sua mão</p>
   </header>
 
-  <main class="cards-container">
-    <!-- Exemplo de card de empresa -->
-    <a href="empresa.html" class="card">
-      <img src="imagens/empresa-exemplo.jpg" alt="Empresa Exemplo">
-      <div class="card-text">
-        <h2>Padaria do Zé</h2>
-        <p>Pães, cucas e cafés especiais</p>
-      </div>
-    </a>
+  <nav class="categorias">
+    <a href="servicos.html"><img src="img/servicos.png" alt="Serviços"></a>
+    <a href="moda.html"><img src="img/moda.png" alt="Moda"></a>
+    <a href="hotelaria.html"><img src="img/hotelaria.png" alt="Hotelaria"></a>
+    <a href="alimentacao.html"><img src="img/alimentacao.png" alt="Alimentação"></a>
+    <a href="lazer.html"><img src="img/lazer.png" alt="Lazer"></a>
+  </nav>
 
-    <a href="empresa.html" class="card">
-      <img src="imagens/empresa-exemplo.jpg" alt="Empresa Exemplo 2">
-      <div class="card-text">
-        <h2>Auto Mecânica Silva</h2>
-        <p>Revisões, alinhamento e manutenção</p>
+  <main>
+   <section class="cards-destaque">
+  <h2 class="titulo-destaque">Em Destaque</h2>
+  <div class="grid-cards">
+    <div class="card"><a href="empresa1.html"><img src="img/empresa1.jpg" alt="Empresa 1"><h3>Empresa 1</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa2.html"><img src="img/empresa2.jpg" alt="Empresa 2"><h3>Empresa 2</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa3.html"><img src="img/empresa3.jpg" alt="Empresa 3"><h3>Empresa 3</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa4.html"><img src="img/empresa4.jpg" alt="Empresa 4"><h3>Empresa 4</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa5.html"><img src="img/empresa5.jpg" alt="Empresa 5"><h3>Empresa 5</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa6.html"><img src="img/empresa6.jpg" alt="Empresa 6"><h3>Empresa 6</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa7.html"><img src="img/empresa7.jpg" alt="Empresa 7"><h3>Empresa 7</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa8.html"><img src="img/empresa8.jpg" alt="Empresa 8"><h3>Empresa 8</h3><p>Descrição curta da empresa.</p></a></div>
+    <div class="card"><a href="empresa9.html"><img src="img/empresa9.jpg" alt="Empresa 9"><h3>Empresa 9</h3><p>Descrição curta da empresa.</p></a></div>
+  </div>
+
+      <div class="card">
+        <a href="empresa2.html">
+          <img src="img/empresa2.jpg" alt="Empresa 2">
+          <h3>Empresa 2</h3>
+          <p>Descrição curta da empresa.</p>
+        </a>
       </div>
-    </a>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Guabiruba Tem</p>
+    <div class="banner-video">
+      <p>📢 Espaço Premium para vídeos institucionais</p>
+      <!-- Aqui você pode embutir um vídeo futuramente -->
+    </div>
   </footer>
 
-  <section class="categoria">
-  <h2>Restaurantes / Lanchonete / Padaria</h2>
-  <div class="cards-container">
-    <a href="empresa-padaria.html" class="card">
-      <img src="imagens/padaria.jpg" alt="Padaria do Zé">
-      <div class="card-text">
-        <h3>Padaria do Zé</h3>
-        <p>Café colonial, cucas e pão caseiro</p>
-        <span>Guabiruba, SC</span>
-      </div>
-    </a>
-    <!-- outras padarias... -->
-  </div>
-</section>
-
-<section class="categoria">
-  <h2>Automotivo / Mecânica</h2>
-  <div class="cards-container">
-    <a href="empresa-mecanica.html" class="card">
-      <img src="imagens/mecanica.jpg" alt="Auto Mecânica Silva">
-      <div class="card-text">
-        <h3>Auto Mecânica Silva</h3>
-        <p>Revisão e troca de óleo</p>
-        <span>Guabiruba, SC</span>
-      </div>
-    </a>
-    <!-- outras oficinas... -->
-  </div>
-</section>
-<section class="categoria">
-  <h2>Serviços Diversos</h2>
-  <div class="cards-container">
-    <a href="montmoveis.html" class="card">
-      <img src="https://scontent.fbnu7-1.fna.fbcdn.net/v/t39.30808-6/448350078_2683070961870630_4726145075126153335_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH5_zw-luWUsj6de_MbwOWnM-FCMSMOuUsz4UIxIw65S4Tm7rP0i6FVMjvV6B_X-uogt2x1HJU06WtHl4-1O6m9&_nc_ohc=nwfz5Okp99kQ7kNvwFOV5mP&_nc_oc=AdlMvdyDqc_QfbK6PH2VtdmnZRayM0sb79-oKMDKlZms5q6PcnAfhypXhSsQukq1tBA&_nc_zt=23&_nc_ht=scontent.fbnu7-1.fna&_nc_gid=EmvBZ6kUdvbdIndTxWKakA&oh=00_AfTHrqgsdxs_JJ4HgYKLTNPhk0iJrYPzan0PjRWPkgE7oQ&oe=6885651F" alt="MontMoveis">
-      <div class="card-text">
-        <h3>MontMoveis</h3>
-        <p>Montagem de móveis, reparos e mudanças</p>
-        <span>Guabiruba, SC</span>
-      </div>
-    </a>
-  </div>
-</section>
-
+  <script src="script.js"></script>
 </body>
 </html>
