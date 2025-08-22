@@ -101,3 +101,17 @@ footer {
   margin-bottom: 40px;
 }
 
+ul {
+  font-size: 20px;
+  color: #eeeeee;
+}
+
+p {
+  font-size: 20px;
+  color: #eeeeee;
+}
+
+/*estilizar paginas individuais*/
+.montmoveis-page {
+  background-color: #ff0000;
+}
