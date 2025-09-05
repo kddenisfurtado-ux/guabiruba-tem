@@ -4,53 +4,136 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guabiruba Tem</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylegpt.css">
 </head>
 <body>
 
+  <!-- ===== Header ===== -->
   <header>
     <h1>Guabiruba Tem</h1>
     <p>O comércio local na palma da sua mão</p>
   </header>
 
-    <div class="banner-video">
-    <p>📢 Espaço Premium para vídeos institucionais</p>
-    <!-- Aqui você pode embutir um vídeo futuramente -->
-  </div>
-  
-  <nav class="categorias">
-    <a href="servico.html">Serviços</a>
+  <!-- ===== Menu ===== -->
+  <nav class="categorias"> 
+    <a href="servicos.html">Serviços</a>
     <a href="moda.html">Moda</a>
+    <a href="beleza.html">Beleza</a>
     <a href="hotelaria.html">Hotelaria</a>
     <a href="alimentacao.html">Alimentação</a>
     <a href="lazer.html">Lazer</a>
   </nav>
 
-<main>
-  <section class="cards-destaque">
-    <h2>Em Destaque</h2>
+  <!-- ===== Faixa Vermelha com Slide ===== -->
+ <div class="faixa-slide">
+  <div class="marquee" aria-label="Empresas em destaque">
+    <ul class="marquee__content">
+      <li><img src="img/alpha nobre.jpg" alt="alpha nobre"></li>
+      <li><img src="img/montmoveis.jpg" alt="montmoveis"></li>
+      <li><img src="img/guabacity.jpg" alt="guabacity"></li>
+      <li><img src="img/alpha nobre.jpg" alt="alpha nobre"></li>
+      <li><img src="img/montmoveis.jpg" alt="montmoveis"></li>
+      <li><img src="img/guabacity.jpg" alt="guabacity"></li>
+      <li><img src="img/alpha nobre.jpg" alt="alpha nobre"></li>
+      <li><img src="img/montmoveis.jpg" alt="montmoveis"></li>
+      <li><img src="img/guabacity.jpg" alt="guabacity"></li>
+      <li><img src="img/alpha nobre.jpg" alt="alpha nobre"></li>
+      <li><img src="img/montmoveis.jpg" alt="montmoveis"></li>
+      <li><img src="img/guabacity.jpg" alt="guabacity"></li>
+    </ul>
 
-    <div class="card"><a href="/montmoveis.html" target="_blank"><img src="imagem/montmoveis.jpg" alt="Montmovis"><h3>MONTMÓVEIS</h3><p>Especialista em Montagem e Manutenção de Moveis.</p></a></div>
-    <div class="card"><a href="empresa2.html" target="_blank"><h3>SUA EMPRESA AQUI</h3><p>Anuncie e esteja ao alcance do clientes</p></a></div>
-    <div class="card"><a href="empresa3.html" target="_blank"><img src="img/empresa3.jpg" alt="LOGO"><h3>SUA EMPRESA AQUI</h3><p>Anuncie e esteja ao alcance do clientes.</p></a></div>
-    <div class="card"><a href="empresa4.html" target="_blank"><img src="img/empresa4.jpg" alt="LOGO"><h3>SUA EMPRESA AQUI/h3><p>Anuncie e esteja ao alcance do clientes.</p></a></div>
-    <div class="card"><a href="empresa5.html" target="_blank"><h3>SUA EMPRESA AQUI</h3><p>Descrição curta da empresa.</p></a></div>
-    <div class="card"><a href="empresa6.html" target="_blank"><img src="img/empresa6.jpg" alt="LOGO"><h3>SUA EMPRESA AQUI</h3><p>Anuncie e esteja ao alcance do clientes.</p></a></div>
-    <div class="card"><a href="empresa7.html" target="_blank"><img src="img/empresa7.jpg" alt="LOGO"><h3>ESUA EMPRESA AQUI</h3><p>Anuncie e esteja ao alcance do clientes.</p></a></div>
-    <div class="card"><a href="empresa8.html" target="_blank"><h3>SUA EMPRESA AQUI</h3><p>Descrição curta da empresa.</p></a></div>
-    <div class="card"><a href="empresa9.html" target="_blank"><img src="img/empresa9.jpg" alt="LOGO"><h3>ESUA EMPRESA AQUI</h3><p>Anuncie e esteja ao alcance do clientes.</p></a></div>
-    <div class="card"><a href="empresa9.html" target="_blank"><img src="img/empresa10.jpg" alt="LOGO"><h3>SUA EMPRESA AQUI</h3><p>Anuncie e esteja ao alcance do clientes.</p></a></div>
-    <div class="card"><a href="empresa9.html" target="_blank"><h3>SUA EMPRESA AQUI</h3><p>Descrição curta da empresa.</p></a></div>
+    <!-- Duplicado para criar o looping perfeito, sem “buraco” -->
+    <!--
+    <ul class="marquee__content" aria-hidden="true">
+      <li><img src="img/alpha nobre.jpg" alt="alpha nobre"></li>
+      <li><img src="img/montmoveis.jpg" alt="montmoveis"></li>
+      <li><img src="img/guabacity.jpg" alt="guabacity"></li>
+    </ul> -->
+  </div>
+</div>
 
-  </section>
-</main>
+  <!-- ===== Cards Destaque ===== -->
+  <main>
+    <section class="cards-destaque">
+      <h2>Em Destaque</h2>
+
+      <div class="card">
+        <a href="/montmoveis.html" alt="MontMóveis">
+          <img src="img/montmoveis.jpg" alt="MontMóveis">
+          <h3>MontMóveis</h3>
+          <p>Montagem e Manutenção de M.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="empresa2.html">
+          <img src="img/empresa2.jpg" alt="Empresa 2">
+          <h3>Empresa 2</h3>
+          <p>Descrição curta da empresa.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="empresa3.html">
+          <img src="img/empresa3.jpg" alt="Empresa 3">
+          <h3>Empresa 3</h3>
+          <p>Descrição curta da empresa.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="empresa4.html">
+          <img src="img/empresa4.jpg" alt="Empresa 4">
+          <h3>Empresa 4</h3>
+          <p>Descrição curta da empresa.</p>
+        </a>
+      </div>
+
+      <div class="card">
+        <a href="empresa5.html">
+          <img src="img/empresa5.jpg" alt="Empresa 5">
+          <h3>Empresa 5</h3>
+          <p>Descrição curta da empresa.</p>
+        </a>
+      </div>
+
+            <div class="card">
+        <a href="empresa5.html">
+          <img src="img/empresa5.jpg" alt="Empresa 6">
+          <h3>Empresa 6</h3>
+          <p>Descrição curta da empresa.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Quadro de Vídeo ===== -->
+  <div class="video-box">
+    <p>🎬Você AQUI</p>
+    <!-- Exemplo para embed: -->
+   <!--<iframe src="/primeira chamada guabirubatem.mp4" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>-->
+
+      <video
+      autoplay loop muted
+      src="/primeira chamada guabirubatem.mp4"
+      type="video/mp4">
+    </video>
+
+  </div>
+
+  <!-- ===== Footer ===== -->
   <footer>
-    <div class="banner-video">
-      <p>📢 Espaço Premium para vídeos institucionais</p>
-      <!-- Aqui você pode embutir um vídeo futuramente -->
+    <div class="patrocinio">
+      <p>Patrocinador:</p><br>
+      <img src="img/carol-presentes.jpg" alt="Patrocinador 1">
+      <img src="img/carol-supermercados.jpg" alt="Patrocinador 2">
+    </div>
+    <div class="contato">
+      <p>&copy; 2025 - Desenvolvido por <strong>DAF WEB SOLUTIONS</strong></p>
+      <p>Guabiruba - SC - Brasil</p>
+      <p>📞 47 99962-5155</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
