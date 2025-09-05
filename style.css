@@ -1,66 +1,88 @@
-/* Cores: Azul, branco e vermelho */
-body {
+/* ===== Reset ===== */
+* {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== Base ===== */
+body {
+  font-family: Arial, sans-serif;
   background-color: #ffffff;
   color: #111;
 }
 
+/* ===== Header ===== */
 header {
-  background-color: #003366;
+  background-color: hsl(210, 100%, 20%);
   color: white;
   text-align: center;
   padding: 20px;
+  height: 100px;
 }
 
+h1 {
+  font-size: 50px;
+  margin: auto;
+}
+
+p {
+  font-size: 20px;
+  margin: auto;
+}
+
+/* ===== Menu Categorias ===== */
 nav.categorias {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  background-color: #f1f1f1;
+  gap: 30px;
+  background-color: hsl(210, 100%, 20%);
   padding: 20px;
 }
 
-nav.categorias a img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 12px;
-  transition: transform 0.2s;
+nav.categorias a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: color 0.3s, transform 0.2s;
 }
 
-nav.categorias a img:hover {
-  transform: scale(1.05);
+nav.categorias a:hover {
+  color: #ffcc00;
+  transform: scale(1.1);
 }
 
+/* ===== Cards Destaque ===== */
 .cards-destaque {
   padding: 20px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+  gap: 20px;
+  justify-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .cards-destaque h2 {
-  margin-bottom: 30px;
-  font-size: 24px;
-  color: #003366;
-}
-
-/* GRID 3x3 para os cards */
-.cards-destaque {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+  grid-column: span 3;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .card {
-  background-color: #eeeeee;
-  border-radius: 10px;
+  background-color: #eee;
   padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1; /* quadrado */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card:hover {
@@ -68,50 +90,119 @@ nav.categorias a img:hover {
 }
 
 .card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  max-width: 100px;
+  margin: 0 auto 10px;
 }
 
 .card h3 {
   color: #003366;
-  margin: 8px 0 5px;
+  margin: 10px 0 5px;
 }
 
 .card p {
   font-size: 14px;
-  color: #333;
 }
 
+/* ===== Faixa Vermelha com Slide ===== */
+.faixa-slide {
+  background: #cc0000;
+  color: #fff;
+  padding: 30px 0;
+  border-bottom: #ffcc00 5px solid;
+  border-top: #ffcc00 5px solid;
+}
+
+.slide-container { /* Contêiner para o slide */
+  display: flex;
+  width: max-content;
+  animation: slide 30s linear infinite;
+  gap: 150px;
+  align-items: center;
+  position: relative; /* Corrigido de absolute para relative */
+  width: 200%; /* Duplicar a largura para o efeito de loop */
+}
+
+.slide-container img {
+  height: 120px;
+  width: auto;
+  margin: 10px 10px;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ===== Quadro de Vídeo ===== */
+.video-box {
+  margin: 40px auto;
+  max-width: 800px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.video-box video {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Corrigido de 100px% para 100% */
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Footer ===== */
 footer {
-  background-color: #cc0000;
+  background-color: #003366;
   color: white;
   text-align: center;
   padding: 30px;
 }
 
-.banner-video {
-  background-color: #cc0000;
-  color: white;
-  text-align: center;
-  padding: 30px;
-  font-size: 18px;
-  margin-bottom: 40px;
+.patrocinio {
+  margin-bottom: 15px;
 }
 
-ul {
-  font-size: 20px;
-  color: #eeeeee;
+.patrocinio img {
+  max-height: 40px;
+  margin: 0 10px;
 }
 
-p {
-  font-size: 20px;
-  color: #eeeeee;
+.contato {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
-/*estilizar paginas individuais*/
-.montmoveis-page {
-  background-color: #ff0000;
+.marquee {
+  --gap: 150px; /* espaço entre as logos */
+  --duracao: 100s; /* velocidade do slide */
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  overflow: hidden;
+}
+
+.marquee__content {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--gap);
+  min-width: 100%; /* cada lista ocupa 100% da largura da tela */
+  flex-shrink: 0; /* evita encolher */
+  animation: scroll var(--duracao) linear infinite;
+}
+
+.marquee__content img {
+  height: 100px;
+  width: auto;
+  display: block;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-30%); }
 }
