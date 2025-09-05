@@ -206,3 +206,45 @@ footer {
   from { transform: translateX(0); }
   to { transform: translateX(-30%); }
 }
+
+/* ===== Estilos Específicos ===== */
+.card--alphabarbearia {
+  background-color: #f0e68c;
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  background-image: url('/img/alpha nobre.jpg');
+  background-size: cover;
+}
+
+.card--agenda {
+  background-color: #add8e6;
+  border: 2px solid #00008b;
+  box-shadow: 0 0 15px rgba(0, 0, 139, 0.5);
+  background-image: url('/img/alfa2.jpeg');
+  background-size: cover;
+}
+
+.card--servicos {
+  background-color: #90ee90;
+  border: 2px solid #006400;
+  box-shadow: 0 0 15px rgba(0, 100, 0, 0.5);
+  background-image: url('/img/alfa1.jpeg');
+  background-size: cover;
+}
+
+.card--ambiente {
+  background-color: #ffcccb;
+  border: 2px solid #ff0000;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+  background-image: url('/img/alfa3.jpeg');
+  background-size: cover;
+}
+
+.alfanobre {
+  list-style-type: none;
+  padding: 0;
+  font-size: 30px;
+  text-align: center;
+}
+
+
