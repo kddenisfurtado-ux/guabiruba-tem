@@ -216,6 +216,15 @@ footer {
   background-size: cover;
 }
 
+.card--montmoveis {
+  background-color: #f0e68c;
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  background-image: url('/img/montmoveis.jpg');
+  background-size: cover;
+}
+
+
 .card--agenda {
   background-color: #add8e6;
   border: 2px solid #00008b;
